@@ -27,7 +27,7 @@ const DynamicTable = ({ columns, data }) => {
                 {columns.map((column) => (
                   <td
                     key={column.key}
-                    className="px-4 py-3 text-gray-600 transition transform hover:bg-blue-200 hover:scale-105 duration-150 ease-in-out"
+                    className="px-4 py-3 text-center text-gray-600 transition transform hover:bg-blue-200 hover:scale-105 duration-150 ease-in-out"
                   >
                     {row[column.key]}
                   </td>

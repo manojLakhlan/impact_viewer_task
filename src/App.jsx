@@ -24,6 +24,18 @@ const App = () => {
     { category: "Vegetables", count: 50 },
   ];
 
+  const columns3 = [
+    { label: "Fruit Name", key: "fruit" },
+    { label: "Count", key: "count" },
+    { label: "Price/Kg", key: "price" },
+  ];
+
+  const data3 = [
+    { fruit: "Apple", count: 30, price: 100 },
+    { fruit: "Orange", count: 50, price: 80 },
+    { fruit: "Banana", count: 130, price: 60 },
+  ];
+
   return (
     <div className="container mx-auto p-6 space-y-8">
       <div>
@@ -35,6 +47,10 @@ const App = () => {
           Categories Table
         </h2>
         <DynamicTable columns={columns2} data={data2} />
+      </div>
+      <div>
+        <h2 className="text-2xl text-center font-bold mb-4">Fruits Table</h2>
+        <DynamicTable columns={columns3} data={data3} />
       </div>
     </div>
   );
